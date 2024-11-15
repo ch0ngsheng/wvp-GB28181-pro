@@ -144,7 +144,7 @@ public class PlatformChannelServiceImpl implements IPlatformChannelService {
                 DeviceChannel deviceChannel = deviceChannelMapper.queryChannel(channelReduce.getDeviceId(), channelReduce.getChannelId());
                 deviceChannel.setParental(0);
                 deviceChannel.setCivilCode(catalog.getCivilCode());
-                deviceChannel.setParentId(catalog.getParentId());
+                deviceChannel.setParentId(catalogId);
                 deviceChannel.setBusinessGroupId(catalog.getBusinessGroupId());
                 deviceChannelList.add(deviceChannel);
             }
